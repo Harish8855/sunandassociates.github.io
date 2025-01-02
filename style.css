@@ -78,3 +78,60 @@ body, ul, li {
         display: flex;
     }
 }
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fade Animation */
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
