@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Sun & Associates</div>
+        <ul class=nav-links>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleNavbar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="slideshow-container">
+        <div class=slide>
+            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2__7jQBN5KQK-icKVwK_9Q1lD9Bm7PpjAqq13CFMLvtsOQIRKqYgUqiVg1Q1uz1CvgWw&usqp=CAU alt="Image 1">
+        </div>
+
+        <div class=slide>
+            <img src=Resources/Image2.jpg alt="Image 2">
+        </div>
+
+        <div class=slide>
+            <img src=Resources/Image3.jpg alt="Image 3">
+        </div>
+
+        <div class=slide>
+            <img src=Resources/Image4.jpg alt="Image 4">
+        </div>
+
+        <!-- Navigation Buttons -->
+
+        <div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
