@@ -5,50 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">Sun & Associates</div>
-        <ul class=nav-links>
+        <button class="hamburger" id="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="hamburger" onclick="toggleNavbar()">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
     </nav>
+
+    <!-- Slideshow -->
     <div class="slideshow-container">
-        <div class=slide>
-            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2__7jQBN5KQK-icKVwK_9Q1lD9Bm7PpjAqq13CFMLvtsOQIRKqYgUqiVg1Q1uz1CvgWw&usqp=CAU alt="Image 1">
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <img class="slides" src="img1.jpg" alt="Slide 1">
+        <img class="slides" src="img2.jpg" alt="Slide 2">
+        <img class="slides" src="img3.jpg" alt="Slide 3">
+        <img class="slides" src="img4.jpg" alt="Slide 4">
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+
+    <!-- Responsive Cards -->
+    <div class="card-container">
+        <div class="card">
+            <h3>Project Finance</h3>
+            Comprehensive financial solutions to bring your projects to life. From feasibility studies to structured debt financing, we ensure smooth execution and optimal returns on your investments.
         </div>
 
-        <div class=slide>
-            <img src=Resources/Image2.jpg alt="Image 2">
+        <div class="card">
+            <h3>Governnment Subsidy</h3>
+            Maximize your benefits with expert guidance on government subsidies. We simplify subsidy applications, compliance, and disbursements tailored to your industry.
         </div>
 
-        <div class=slide>
-            <img src=Resources/Image3.jpg alt="Image 3">
+        <div class="card">
+            <h3>GST Compliance</h3>
+            Stay ahead with seamless GST compliance services. From registrations to filings, audits, and dispute resolution, we handle it all for hassle-free tax management.
         </div>
 
-        <div class=slide>
-            <img src=Resources/Image4.jpg alt="Image 4">
+        <div class="card">
+            <h3>Bank Audit</h3>
+            Accurate and compliant bank audit services ensuring transparency and risk mitigation. We specialize in statutory, concurrent, and forensic audits with a focus on regulatory adherence.
         </div>
+    </div>
+    <div background="Bg.jpg" class="main">
+        
+      
+    </div>
 
-        <!-- Navigation Buttons -->
 
+    <footer class="footer">
         <div>
-            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <h3>Contact Us</h3>
+           <h6>Email: casohannehete@gmail.com</h6>
         </div>
+    </footer>
 
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
