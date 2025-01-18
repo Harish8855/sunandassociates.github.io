@@ -1,27 +1,30 @@
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f8ff;
+    overflow: scroll;
 }
 
-/* Navbar styles */
 .navbar {
     background-color: #007bff;
     color: white;
-    padding: 1em;
+    padding: 0.5em;
     display: flex;
     justify-content: space-between;
-    position: static;
+    position: sticky;
     align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    gap: 1em;
+    margin-right: 20px;
 }
 
 .nav-links li {
@@ -31,16 +34,15 @@ body {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .nav-links a:hover {
     background-color: #0056b3;
-    padding: 0.5em 1em;
-    border-radius: 5px;
+    text-decoration: underline;
+    border-radius: 10px;
 }
 
-/* Hamburger menu styles */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -81,13 +83,17 @@ body {
     .nav-links li {
         margin: 0.5em 0;
     }
+
+    .slideshow-container {
+        height: 75vh;
+        width: 100%;
+    }
 }
 
-/* Slideshow styles */
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    height: auto;
+    height: 75%;
     margin: auto;
     overflow: hidden;
     text-align: center;
@@ -124,7 +130,6 @@ body {
     right: 10px;
 }
 
-/* Card styles */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -157,25 +162,57 @@ body {
 
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .card-container {
         flex-direction: column;
         align-items: center;
     }
+
+    .slideshow-container {
+        height: auto;
+    }
+}
+
+
+.second-container {
+    background-image: url(about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.second-container>* {
+    color: #164581;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.second-container img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    box-sizing: border-box;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 .footer {
     background-color: #007bff;
     color: rgb(250, 249, 249);
     display: flex;
-    justify-content: center;
     width: 100%;
+    justify-content: center;
 }
 
 .footer h3 {
     margin-top: 10px;
     margin-bottom: 5px;
+
 }
 
 .footer h6 {

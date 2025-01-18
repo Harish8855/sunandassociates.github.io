@@ -1,0 +1,21 @@
+.flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.color {
+    color: #164581;
+}
+
+.border {
+    border: 2px solid red;
+}
+
+.img-width {
+    max-width: 100%;
+    height: auto;
+}
+
