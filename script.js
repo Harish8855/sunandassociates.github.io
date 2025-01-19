@@ -6,6 +6,13 @@ hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 
+// if (navLinks.classList.contains("active")) {
+//     slideshow.classList.add("menu-open");
+// }
+// else{
+//     slideshow.classList.remove("menu-open");
+// }
+
 // Slideshow functionality
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slides");
