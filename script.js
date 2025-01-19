@@ -7,7 +7,7 @@ hamburger.addEventListener("click", () => {
 });
 
 // if (navLinks.classList.contains("active")) {
-//     slideshow.classList.add("menu-open");
+//     slideshow-container.classList.add("menu-open");
 // }
 // else{
 //     slideshow.classList.remove("menu-open");
