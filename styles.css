@@ -3,11 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f8ff;
-    overflow: scroll;
     box-sizing: border-box;
 }
 
-.navbar {
+.mine-navbar {
     background-color: #ffffff;
     color: #164581;
     padding: 0.5em;
@@ -17,32 +16,32 @@ body {
     align-items: center;
 }
 
-.logo {
+.mine-logo {
     margin-left: 20px;
 }
 
-.nav-links {
+.mine-nav-links {
     list-style: none;
     display: flex;
     gap: 1em;
     margin-right: 20px;
 }
 
-.nav-links li {
+.mine-nav-links li {
     margin: 0 1em;
 }
 
-.nav-links a {
+.mine-nav-links a {
     color: #164581;
     text-decoration: none;
     font-size: 24px;
 }
 
-.nav-links a:hover {
+.mine-nav-links a:hover {
     text-decoration: underline;
 }
 
-.hamburger {
+.mine-hamburger {
     display: none;
     flex-direction: column;
     gap: 4px;
@@ -51,27 +50,27 @@ body {
     border: none;
 }
 
-.hamburger .line {
+.mine-hamburger .mine-line {
     width: 25px;
     height: 3px;
     background-color: #164581;
     border-radius: 2px;
 }
 
-.menu.active {
+.mine-menu.mine-active {
     display: block;
 }
 
-.slideshow .menu-open {
+.mine-slideshow .mine-menu-open {
     margin-top: 150px;
 }
 
 @media (max-width: 768px) {
-    .hamburger {
+    .mine-hamburger {
         display: flex;
     }
 
-    .nav-links {
+    .mine-nav-links {
         display: none;
         flex-direction: column;
         background-color: #ffffff;
@@ -80,23 +79,25 @@ body {
         left: 0;
         width: 100%;
         text-align: center;
+        border: 1px solid black;
+
     }
 
-    .nav-links.active {
+    .mine-nav-links.mine-active {
         display: flex;
     }
 
-    .nav-links li {
+    .mine-nav-links li {
         margin: 0.5em 0;
     }
 
-    .slideshow-container {
+    .mine-slideshow-container {
         height: 75vh;
         width: 100%;
     }
 }
 
-.slideshow-container {
+.mine-slideshow-container {
     position: relative;
     max-width: 100%;
     height: 60vh;
@@ -105,18 +106,18 @@ body {
     text-align: center;
 }
 
-.slides {
+.mine-slides {
     display: none;
     width: 100%;
 
 }
 
-.active {
+.mine-active {
     display: block;
 }
 
-.prev,
-.next {
+.mine-prev,
+.mine-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -126,17 +127,18 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     z-index: 100;
+    border: 2px solid red;
 }
 
-.prev {
+.mine-prev {
     left: 10px;
 }
 
-.next {
+.mine-next {
     right: 10px;
 }
 
-.card-container {
+.mine-card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -145,7 +147,7 @@ body {
     padding: 10px;
 }
 
-.card {
+.mine-card {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -155,23 +157,23 @@ body {
     text-align: center;
 }
 
-.card ul li {
+.mine-card ul li {
     list-style: inside;
 }
 
 @media (max-width: 768px) {
-    .card-container {
+    .mine-card-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .slideshow-container {
+    .mine-slideshow-container {
         height: auto;
     }
 }
 
 
-.second-container {
+.mine-second-container {
     background-image: url(about.jpg);
     background-position: center;
     background-size: cover;
@@ -179,7 +181,7 @@ body {
     width: 100%;
 }
 
-.second-container>* {
+.mine-second-container>* {
     color: #164581;
     font-size: 1.6rem;
     font-weight: 500;
@@ -188,7 +190,7 @@ body {
     justify-content: center;
 }
 
-.second-container img {
+.mine-second-container img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
@@ -198,7 +200,7 @@ body {
     overflow: clip;
 }
 
-.footer {
+.mine-footer {
     background-color: #007bff;
     color: rgb(250, 249, 249);
     display: flex;
@@ -206,13 +208,13 @@ body {
     justify-content: center;
 }
 
-.footer h3 {
+.mine-footer h3 {
     margin-top: 10px;
     margin-bottom: 5px;
 
 }
 
-.footer h6 {
+.mine-footer h6 {
     margin-top: 0;
     margin-bottom: 5px;
 }

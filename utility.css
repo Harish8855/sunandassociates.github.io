@@ -1,21 +1,24 @@
-.flex {
+.mine-flex {
     display: flex;
 }
 
-.text-center {
+.mine-text-center {
     text-align: center !important;
 }
 
-.bc {
+.mine-bc {
     color: #164581;
 }
 
-.border {
+.mine-border {
     border: 2px solid red;
 }
 
-.img-width {
+.mine-img-width {
     max-width: 100%;
     height: auto;
 }
 
+.mine-prev, .mine-next {
+    border: 5px solid red;
+}
