@@ -20,6 +20,13 @@ body {
     margin-left: 20px;
 }
 
+.mine-logo > a {
+    text-decoration: none;
+    color: #164581;
+    font-weight: bold;
+    font-size: 25px;
+}
+
 .mine-nav-links {
     list-style: none;
     display: flex;
@@ -34,7 +41,7 @@ body {
 .mine-nav-links a {
     color: #164581;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .mine-nav-links a:hover {
