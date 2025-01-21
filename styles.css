@@ -127,7 +127,6 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     z-index: 100;
-    border: 2px solid red;
 }
 
 .mine-prev {
