@@ -3,7 +3,8 @@ const hamburger = document.getElementById("mine-hamburger");
 const navLinks = document.getElementById("mine-nav-links");
 
 hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("mine-active");});
+    navLinks.classList.toggle("mine-active");
+});
 
 // Slideshow functionality
 let slideIndex = 0;
