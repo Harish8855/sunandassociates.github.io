@@ -22,7 +22,25 @@
 .mine-prev, .mine-next {
     border: 5px solid red;
 }
+
  .mine-align-center {
     align-items: center;
     text-align: center;
  }
+
+ .carousel-caption p::before{
+  content: "";
+  display: block;
+  width: 20%;
+  height: 3px;
+  margin: 15px auto;
+  background: #fcba03;
+}
+ .carousel-caption p::after{
+  content: "";
+  display: block;
+  width: 20%;
+  height: 3px;
+  margin: 15px auto;
+  background: #fcba03;
+}

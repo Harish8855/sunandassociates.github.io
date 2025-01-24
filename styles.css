@@ -3,6 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f8ff;
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
 }
 
 .mine-navbar {
@@ -21,7 +25,7 @@ body {
     margin-left: 20px;
 }
 
-.mine-logo>a {
+.mine-logo > a {
     text-decoration: none;
     color: #164581;
     font-weight: bold;
@@ -73,8 +77,7 @@ body {
 .mine-slideshow .mine-menu-open {
     margin-top: 150px;
 }
-
-.mine-navbar ul>* {
+.mine-navbar ul > * {
     margin: 0;
     padding: 0;
 }
@@ -131,10 +134,6 @@ body {
 
 }
 
-.mine-active {
-    display: block;
-}
-
 .mine-prev,
 .mine-next {
     position: absolute;
@@ -156,38 +155,6 @@ body {
     right: 10px;
 }
 
-.carousel-caption p::before {
-    content: "";
-    display: block;
-    width: 20%;
-    height: 3px;
-    margin: 15px auto;
-    background: #fcba03;
-}
-
-.carousel-caption p::after {
-    content: "";
-    display: block;
-    width: 20%;
-    height: 3px;
-    margin: 15px auto;
-    background: #fcba03;
-}
-
-.about-bg {
-    background-image: url(Assets/about.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-sizing: content-box;
-}
-
-.container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
 .mine-card-container {
     display: flex;
     flex-wrap: wrap;
@@ -207,11 +174,6 @@ body {
     text-align: center;
 }
 
-.mine-card>p {
-    text-align: justify;
-}
-
-
 .mine-card ul li {
     list-style: inside;
 }
@@ -228,32 +190,18 @@ body {
 }
 
 
-.mine-second-container {
-    background-image: url(about.jpg);
+.about-bg {
+    background-image: url(Assets/about.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 }
 
-.mine-second-container>* {
-    color: #164581;
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
+.container-fluid{
+    box-sizing: content-box
 }
 
-.mine-second-container img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border-style: none;
-    box-sizing: border-box;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
 
 .mine-footer {
     background-color: #007bff;
@@ -261,14 +209,12 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    box-sizing: content-box;
 }
 
 .mine-footer h3 {
     margin-top: 10px;
     margin-bottom: 5px;
     text-decoration: underline;
-
 }
 
 .mine-footer h6 {
@@ -276,9 +222,9 @@ body {
     margin-bottom: 5px;
 }
 
-.mine-mail {
-    height: auto;
-    width: 20px;
-    position: absolute;
-    margin-left: -1.5em;
+.mine-mail{
+  height: auto;
+  width: 20px;
+  position: absolute;
+  margin-left: -1.5em ;
 }
