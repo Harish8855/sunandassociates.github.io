@@ -22,3 +22,7 @@
 .mine-prev, .mine-next {
     border: 5px solid red;
 }
+ .mine-align-center {
+    align-items: center;
+    text-align: center;
+ }

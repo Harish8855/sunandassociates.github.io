@@ -229,10 +229,18 @@ body {
 .mine-footer h3 {
     margin-top: 10px;
     margin-bottom: 5px;
+    text-decoration: underline;
 
 }
 
 .mine-footer h6 {
     margin-top: 0;
     margin-bottom: 5px;
+}
+
+.mine-mail{
+  height: auto;
+  width: 20px;
+  position: absolute;
+  margin-left: -1.5em ;
 }
