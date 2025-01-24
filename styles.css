@@ -22,7 +22,7 @@ body {
     margin-left: 20px;
 }
 
-.mine-logo > a {
+.mine-logo>a {
     text-decoration: none;
     color: #164581;
     font-weight: bold;
@@ -74,7 +74,8 @@ body {
 .mine-slideshow .mine-menu-open {
     margin-top: 150px;
 }
-.mine-navbar ul > * {
+
+.mine-navbar ul>* {
     margin: 0;
     padding: 0;
 }
@@ -156,6 +157,39 @@ body {
     right: 10px;
 }
 
+.carousel-caption p::before {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 3px;
+    margin: 15px auto;
+    background: #fcba03;
+}
+
+.carousel-caption p::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 3px;
+    margin: 15px auto;
+    background: #fcba03;
+}
+
+.about-bg {
+    background-image: url(Assets/about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .mine-card-container {
     display: flex;
     flex-wrap: wrap;
@@ -174,6 +208,11 @@ body {
     max-width: 300px;
     text-align: center;
 }
+
+.mine-card>p {
+    text-align: justify;
+}
+
 
 .mine-card ul li {
     list-style: inside;
@@ -238,9 +277,9 @@ body {
     margin-bottom: 5px;
 }
 
-.mine-mail{
-  height: auto;
-  width: 20px;
-  position: absolute;
-  margin-left: -1.5em ;
+.mine-mail {
+    height: auto;
+    width: 20px;
+    position: absolute;
+    margin-left: -1.5em;
 }
