@@ -44,3 +44,12 @@
   margin: 15px auto;
   background: #fcba03;
 }
+.about-bg h1::after{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    margin: 1px auto;
+    background: #fcba03;
+  }
+  

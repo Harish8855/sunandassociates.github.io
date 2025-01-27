@@ -189,7 +189,6 @@ body {
     }
 }
 
-
 .about-bg {
     background-image: url(Assets/about.jpg);
     background-position: center;
@@ -198,10 +197,13 @@ body {
     width: 100%;
 }
 
-.container-fluid{
-    box-sizing: content-box
+.container-fluid {
+    box-sizing: border-box;
 }
 
+.row {
+    margin-left: 0 !important;
+}
 
 .mine-footer {
     background-color: #007bff;
@@ -227,4 +229,51 @@ body {
   width: 20px;
   position: absolute;
   margin-left: -1.5em ;
+}
+
+
+/* ...existing code... */
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-left {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.fade-in-right {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.value > p{
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    
+.value > p {
+font-size: 20px;
+text-align:inherit;
+}
+
 }
