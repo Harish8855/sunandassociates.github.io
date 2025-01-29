@@ -29,46 +29,47 @@ function prevSlide() {
 showSlide(slideIndex);
 interwal = setInterval(nextSlide, 5000);
 
+
 // Fade-in animations on scroll
-const values = document.querySelectorAll('.value p');
-const journeyImage = document.querySelector('.jurnyImg');
+// const values = document.querySelectorAll('.value p');
+// const journeyImage = document.querySelector('.jurnyImg');
 
-function debounce(func, wait = 20, immediate = true) {
-    let timeout;
-    return function() {
-        const context = this, args = arguments;
-        const later = function() {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-        };
-        const callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-    };
-}
+// function debounce(func, wait = 1000, immediate = true) {
+//     let timeout;
+//     return function () {
+//         const context = this, args = arguments;
+//         const later = function () {
+//             timeout = null;
+//             if (!immediate) func.apply(context, args);
+//         };
+//         const callNow = immediate && !timeout;
+//         clearTimeout(timeout);
+//         timeout = setTimeout(later, wait);
+//         if (callNow) func.apply(context, args);
+//     };
+// }
 
-function checkScroll() {
-    values.forEach(value => {
-        const rect = value.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-            if (!value.classList.contains('fade-in-right')) {
-                value.classList.add('fade-in-right');
-            }
-        } else {
-            value.classList.remove('fade-in-right');
-        }
-    });
+// function checkScroll() {
+//     values.forEach(value => {
+//         const rect = value.getBoundingClientRect();
+//         if (rect.top < window.innerHeight && rect.bottom > 0) {
+//             if (!value.classList.contains('fade-in-right')) {
+//                 value.classList.add('fade-in-right');
+//             }
+//         } else {
+//             value.classList.remove('fade-in-right');
+//         }
+//     });
 
-    const imgRect = journeyImage.getBoundingClientRect();
-    if (imgRect.top < window.innerHeight && imgRect.bottom > 0) {
-        if (!journeyImage.classList.contains('fade-in-left')) {
-            journeyImage.classList.add('fade-in-left');
-        }
-    } else {
-        journeyImage.classList.remove('fade-in-left');
-    }
-}
+//     const imgRect = journeyImage.getBoundingClientRect();
+//     if (imgRect.top < window.innerHeight && imgRect.bottom > 0) {
+//         if (!journeyImage.classList.contains('fade-in-left')) {
+//             journeyImage.classList.add('fade-in-left');
+//         }
+//     } else {
+//         journeyImage.classList.remove('fade-in-left');
+//     }
+// }
 
-window.addEventListener('scroll', debounce(checkScroll));
-window.addEventListener('load', checkScroll);
+// window.addEventListener('scroll', debounce(checkScroll));
+// window.addEventListener('load', checkScroll);
