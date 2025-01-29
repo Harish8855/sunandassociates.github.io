@@ -128,9 +128,8 @@ body {
     background-color: black;
 }
 
-.carousel-caption {
-    position: static;
-    text-align: center;
+.carousel-caption p {
+    font-size: 1.2em;
 }
 
 .align-middle{
@@ -222,6 +221,98 @@ body {
 .row {
     margin-left: 0 !important;
 }
+
+.features-items,
+.features-items .items-box {
+  overflow: hidden;
+  /* border:1px solid #164581 */
+}
+
+.features-area .equal-height::after {
+  background: #e7e7e7 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: -1px;
+  top: 0;
+  width: 1px;
+}
+
+.features-area .equal-height::before {
+  background: #e7e7e7 none repeat scroll 0 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  width: 100%;
+}
+
+.features-area .features-items .col-md-5,
+.features-area .features-items .col-md-7 {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+
+.features-area .features-items.reversed .col-md-5,
+.features-area .features-items.reversed .col-md-7 {
+  display: inline-block;
+  float: left;
+}
+
+.features-area .features-items.reversed .info-box {
+  float: right;
+}
+
+.features-area .features-items .item {
+  padding: 30px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.features-area .features-items .item:hover {
+  background-color: #164581;
+}
+.features-area .features-items .item:hover .info h4,
+.features-area .features-items .item:hover .info p,
+.features-area .features-items .item:hover .info a.profile-btn {
+  color: white !important;
+}
+
+.features-area.item-full .features-items .item {
+  padding: 30px;
+}
+
+.features-area .features-items .item h4 {
+  position: relative;
+  font-size: 1.5rem !important;
+}
+.features-area .features-items .item a {
+    text-decoration: none;
+  }
+.features-area .item .info p {
+  font-size: 0.9rem !important;
+  margin-bottom: 10px !important;
+}
+
+.features-area.bottom-small {
+  padding-bottom: 25px;
+}
+
+.features-area.default-padding.bottom-none {
+  padding-bottom: 30px;
+}
+
+.features-area .item .icon {
+  margin-bottom: 20px;
+}
+
+
+.fixed-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 .mine-footer {
     background-color: #007bff;

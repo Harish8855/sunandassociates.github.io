@@ -52,4 +52,11 @@
     margin: 1px auto;
     background: #fcba03;
   }
-  
+  .features-area h1::after{
+    content: "";
+    display: block;
+    width: 20%;
+    height: 3px;
+    margin: 15px auto;
+    background: #fcba03;
+  }
