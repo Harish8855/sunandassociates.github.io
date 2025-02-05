@@ -315,6 +315,14 @@ body {
 
 /* Services-End */
 
+/* profile */
+
+.w-155 {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+}
+
 /* Footer-Start*/
 .web-footer {
     background-color: #007bff;
