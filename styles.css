@@ -7,6 +7,11 @@ body {
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .mine-bc {
@@ -325,29 +330,31 @@ body {
 
 /* Footer-Start*/
 .web-footer {
-    background-color: #007bff;
+    background-color: rgb(15, 41, 74);
     color: rgb(250, 249, 249);
     display: flex;
-    width: 100%;
-    justify-content: center;
+    width: 100%; 
+    justify-content: flex-end; 
+
 }
 
 .web-footer h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    text-decoration: underline;
+    margin-top: 1em;
+    margin-bottom: 5em;
+}
+
+.web-footer h3::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 5px auto;
+    background: #fcba03;
 }
 
 .web-footer h6 {
     margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.web-mail {
-    height: auto;
-    width: 20px;
-    position: absolute;
-    margin-left: -1.5em;
+    margin-bottom: em;
 }
 
 /* footer-end */
