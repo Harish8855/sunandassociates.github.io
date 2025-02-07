@@ -18,6 +18,11 @@ html {
     color: #164581;
 }
 
+.row .fixed-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /* Nav-Start */
 .web-navbar {
     background-color: #ffffff;
@@ -194,10 +199,6 @@ html {
     width: 100%;
 }
 
-.row .fixed-width {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 .about-bg h1::after {
     content: "";
@@ -329,18 +330,99 @@ html {
 }
 
 /* Footer-Start*/
-.web-footer {
+/* .web-footer {
     background-color: rgb(15, 41, 74);
     color: rgb(250, 249, 249);
     display: flex;
     width: 100%; 
     justify-content: flex-end; 
+} */
 
+@media (min-width: 576px) {
+    .col-sm-4 {
+        flex: 0 0 auto;
+        width: 15% !important;
+        margin-left: 12em !important;
+    }
 }
 
-.web-footer h3 {
+.border-top-cust {
+    border-top: 7px solid #fcba03;
+    position: relative;
+    top: 5px;
+}
+
+.border-top-cust {
+    border-top: 7px solid #fcba03;
+    position: relative;
+    top: 5px;
+}
+
+.footer-bg {
+    background-color: #0f294a;
+    border-bottom: 1px solid #fcba03;
+}
+
+.footer-bg h4::after {
+    content: "";
+    display: block;
+    width: 15%;
+    height: 2px;
+    margin: 10px 0;
+    background: #fcba03;
+}
+
+.footer-list li {
+    font-family: "poppins";
+    font-size: 0.87rem;
+    padding-bottom: 7px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.footer-list li:before {
+    content: "\f105";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: "FontAwesome";
+    color: #fcba03;
+    font-weight: 700;
+}
+
+.footer-list li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-list li a:hover {
+    text-decoration: underline;
+    color: #fcba03;
+}
+
+.bottom-footer {
+    background-color: #0f294a;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.bottom-footer a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+span.required {
+    color: #c01e0f;
+}
+
+.modal-title {
+    color: #0f294a;
+    font-size: 1rem;
+}
+
+/* .web-footer h3 {
     margin-top: 1em;
-    margin-bottom: 5em;
+    margin-bottom: 0.5em;
 }
 
 .web-footer h3::after {
@@ -354,7 +436,7 @@ html {
 
 .web-footer h6 {
     margin-top: 0;
-    margin-bottom: em;
-}
+    margin-bottom: 0.5em;
+} */
 
 /* footer-end */
