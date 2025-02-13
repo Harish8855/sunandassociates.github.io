@@ -1,16 +1,29 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f8ff;
-    overflow-x: hidden;
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-    scroll-behavior: smooth;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+
+
+:root{
+    /* background color */
+    --bg-white:#ffff;
+
+    /* other colors */
+    --primary-color: #164581;
+    --secondary-color:#fcba03;
+    --text-white: #fff;
+    --dark-color:#0000;
 }
 
-html {
+body,
+html{
+    font-family:"poppins",serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-white);
+    overflow-x: hidden;
+    font-family: "Poppins", serif;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
     scroll-behavior: smooth;
 }
 
@@ -23,10 +36,14 @@ html {
     margin: 0 auto;
 }
 
+.title{
+    font-size: 3rem;
+}
+
 /* Nav-Start */
 .web-navbar {
-    background-color: #ffffff;
-    color: #164581;
+    background-color: var(--bg-white);
+    color: var(--primary-color);
     padding: 0.5em;
     display: flex;
     justify-content: space-between;
@@ -40,14 +57,13 @@ html {
     width: 7%;
     margin-left: 0.5em;
     margin-right: 0.5em;
-
 }
 
 .web-logo>a {
     text-decoration: none;
-    color: #164581;
+    color: var(--primary-color);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .web-nav-links {
@@ -61,12 +77,12 @@ html {
 .web-nav-links a {
     color: #164581;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .web-nav-links a:hover {
     text-decoration: underline;
-    text-decoration-color: #fcba03;
+    text-decoration-color: var(--secondary-color);
 }
 
 .web-hamburger {
@@ -81,7 +97,7 @@ html {
 .web-hamburger .web-line {
     width: 25px;
     height: 3px;
-    background-color: #164581;
+    background-color:var(--primary-color);
     border-radius: 2px;
 }
 
@@ -98,6 +114,7 @@ html {
     padding: 0;
 }
 
+
 @media (max-width: 768px) {
     .web-hamburger {
         display: flex;
@@ -107,7 +124,7 @@ html {
         border: 1px solid;
         display: none;
         flex-direction: column;
-        background-color: #ffffff;
+        background-color: var(--bg-white);
         position: absolute;
         gap: 0.5em;
         top: 58px;
@@ -144,7 +161,7 @@ html {
 }
 
 .carousel-item {
-    background-color: black;
+    background-color:black;
 }
 
 .carousel-item img {
@@ -206,11 +223,13 @@ html {
     width: 80px;
     height: 3px;
     margin: 5px auto;
-    background: #fcba03;
+    background: var(--secondary-color);
 }
 
 .journey-text {
     font-size: x-large;
+ line-height: 1.5;
+ margin-bottom: 3rem;
 }
 
 @media (max-width: 768px) {
@@ -286,7 +305,7 @@ html {
 
 .features-area .features-items .item h4 {
     position: relative;
-    font-size: 1.5rem !important;
+    font-size: 2.5rem !important;
 }
 
 .features-area .features-items .item a {
@@ -294,8 +313,8 @@ html {
 }
 
 .features-area .item .info p {
-    font-size: 0.9rem !important;
-    margin-bottom: 10px !important;
+    font-size: 1.5rem !important;
+    /* margin-bottom: 10px !important; */
 }
 
 .features-area.bottom-small {
@@ -316,7 +335,7 @@ html {
     width: 80px;
     height: 3px;
     margin: 5px auto;
-    background: #fcba03;
+    background: var(--secondary-color);
 }
 
 /* Services-End */
@@ -329,38 +348,65 @@ html {
     border-radius: 50%;
 }
 
+.my-2{
+    font-size: 2.5rem;
+}
+
+.py-5{
+    padding-bottom: 0 !important;
+}
+
+.my-2::after {
+    content: "";
+    display: block;
+    width: 5%;
+    height: 0.3rem;
+    margin: 1rem 0;
+    top: 0.5rem;
+    background: var(--secondary-color);
+}
+
+.col-md-9 p,
+ul {
+    font-size: 1.8rem;
+    font-weight: 250;
+    line-height: 2rem;
+}
+
 /* Footer-Start*/
-/* .web-footer {
-    background-color: rgb(15, 41, 74);
-    color: rgb(250, 249, 249);
-    display: flex;
-    width: 100%; 
-    justify-content: flex-end; 
-} */
 
 @media (min-width: 576px) {
     .col-sm-4 {
         flex: 0 0 auto;
-        width: 15% !important;
-        margin-left: 12em !important;
-    }
+        width: 30% !important;
+        margin-right: -8rem;
+        margin-left: 5rem !important;
+        }
+}
+
+.col-sm-4 h4{
+    font-size: 2.3rem;
+    margin: 2rem;
+    margin-left: auto;
+}
+
+.footer-list a {
+    overflow-wrap: break-word;
+}
+
+.col-sm-4{
+    margin-left: 2rem;
 }
 
 .border-top-cust {
-    border-top: 7px solid #fcba03;
-    position: relative;
-    top: 5px;
-}
-
-.border-top-cust {
-    border-top: 7px solid #fcba03;
+    border-top: 7px solid var(--secondary-color);
     position: relative;
     top: 5px;
 }
 
 .footer-bg {
-    background-color: #0f294a;
-    border-bottom: 1px solid #fcba03;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .footer-bg h4::after {
@@ -368,13 +414,13 @@ html {
     display: block;
     width: 15%;
     height: 2px;
-    margin: 10px 0;
-    background: #fcba03;
+    margin: 1rem 0;
+    background: var(--secondary-color);
 }
 
 .footer-list li {
     font-family: "poppins";
-    font-size: 0.87rem;
+    font-size: 1.5rem;
     padding-bottom: 7px;
     position: relative;
     padding-left: 25px;
@@ -386,23 +432,23 @@ html {
     left: 0;
     top: 0;
     font-family: "FontAwesome";
-    color: #fcba03;
+    color: var(--secondary-color);
     font-weight: 700;
 }
 
 .footer-list li a {
-    color: #ffffff;
+    color: var(--bg-white);
     text-decoration: none;
 }
 
 .footer-list li a:hover {
     text-decoration: underline;
-    color: #fcba03;
+    color: var(--secondary-color);
 }
 
 .bottom-footer {
-    background-color: #0f294a;
-    font-size: 0.8rem;
+    background-color: var(--primary-color);
+    font-size: 2.5rem;
     font-weight: 300;
 }
 
@@ -416,27 +462,12 @@ span.required {
 }
 
 .modal-title {
-    color: #0f294a;
-    font-size: 1rem;
+    color: var(--primary-color);
+    font-size: 2rem;
 }
 
-/* .web-footer h3 {
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+.col-8 p {
+    font-size: 1.2rem;
 }
-
-.web-footer h3::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    margin: 5px auto;
-    background: #fcba03;
-}
-
-.web-footer h6 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-} */
 
 /* footer-end */
