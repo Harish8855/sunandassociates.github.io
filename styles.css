@@ -2,20 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
 
 
-:root{
+:root {
     /* background color */
-    --bg-white:#ffff;
+    --bg-white: #ffff;
 
     /* other colors */
     --primary-color: #164581;
-    --secondary-color:#fcba03;
+    --secondary-color: #fcba03;
     --text-white: #fff;
-    --dark-color:#0000;
+    --dark-color: #0000;
+
+    /* fonts */
+    /* --primary-font: "poppins", sanif; */
 }
 
 body,
-html{
-    font-family:"poppins",serif;
+html {
+    font-family: "poppins", serif;
     margin: 0;
     padding: 0;
     background-color: var(--bg-white);
@@ -36,7 +39,7 @@ html{
     margin: 0 auto;
 }
 
-.title{
+.title {
     font-size: 3rem;
 }
 
@@ -97,7 +100,7 @@ html{
 .web-hamburger .web-line {
     width: 25px;
     height: 3px;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     border-radius: 2px;
 }
 
@@ -161,7 +164,7 @@ html{
 }
 
 .carousel-item {
-    background-color:black;
+    background-color: black;
 }
 
 .carousel-item img {
@@ -228,8 +231,8 @@ html{
 
 .journey-text {
     font-size: x-large;
- line-height: 1.5;
- margin-bottom: 3rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
 }
 
 @media (max-width: 768px) {
@@ -348,11 +351,11 @@ html{
     border-radius: 50%;
 }
 
-.my-2{
+.my-2 {
     font-size: 2.5rem;
 }
 
-.py-5{
+.py-5 {
     padding-bottom: 0 !important;
 }
 
@@ -368,6 +371,7 @@ html{
 
 .col-md-9 p,
 ul {
+    font-family: "poppins", serif;
     font-size: 1.8rem;
     font-weight: 250;
     line-height: 2rem;
@@ -381,10 +385,10 @@ ul {
         width: 30% !important;
         margin-right: -8rem;
         margin-left: 5rem !important;
-        }
+    }
 }
 
-.col-sm-4 h4{
+.col-sm-4 h4 {
     font-size: 2.3rem;
     margin: 2rem;
     margin-left: auto;
@@ -394,7 +398,7 @@ ul {
     overflow-wrap: break-word;
 }
 
-.col-sm-4{
+.col-sm-4 {
     margin-left: 2rem;
 }
 
