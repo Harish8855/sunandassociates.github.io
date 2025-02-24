@@ -219,7 +219,6 @@ html {
     width: 100%;
 }
 
-
 .about-bg h1::after {
     content: "";
     display: block;
@@ -241,6 +240,10 @@ html {
     }
 }
 
+/* #profile {
+    background-color: rgb(238, 238, 238);
+} */
+ 
 /* About-End */
 
 /* Services-Start */
