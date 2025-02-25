@@ -11,9 +11,6 @@
     --secondary-color: #fcba03;
     --text-white: #fff;
     --dark-color: #0000;
-
-    /* fonts */
-    /* --primary-font: "poppins", sanif; */
 }
 
 body,
@@ -239,10 +236,6 @@ html {
         font-size: medium;
     }
 }
-
-/* #profile {
-    background-color: rgb(238, 238, 238);
-} */
  
 /* About-End */
 
@@ -279,13 +272,13 @@ html {
     vertical-align: middle;
 }
 
-.features-area .features-items.reversed .col-md-5,
-.features-area .features-items.reversed .col-md-7 {
+.features-area .col-md-5,
+.features-area .col-md-7 {
     display: block;
     float: left;
 }
 
-.features-area .features-items.reversed .info-box {
+.features-area {
     float: right;
 }
 
