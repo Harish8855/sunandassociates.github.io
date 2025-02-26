@@ -35,7 +35,7 @@
     <!-- navbar end -->
 
     <!-- body -->
-    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="d-flex justify-content-center align-items-center flex-wrap" style="height: 100vh;">
         <div class="box5">
             <div class="mt-15 text-center shadow p-3 bg-body-tertiary rounded border">
                 <p>Prime Minister's Employment Generation Programme PMEGP
@@ -103,6 +103,17 @@
 
         footer {
             margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .d-flex {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .box5 {
+                width: 80%;
+            }
         }
     </style>
 
