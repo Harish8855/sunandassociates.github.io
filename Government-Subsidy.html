@@ -32,21 +32,23 @@
             <li><a href="#footer">Contact</a></li>
         </ul>
     </nav>
+    <!-- navbar end -->
 
-    <div class="row">
-
-        <div class="row mt-15 text-center shadow p-3 d-flex bg-body-tertiary rounded border">
-            <p>Prime Minister's Employment Generation Programme PMEGP
-                <a href="Assets/Prime Minister.docx Chart.pdf" class="btn btn-primary" download>
-                    Download PDF</a>
-            </p>
-        </div>
-
-        <div class="row mb-15 text-center shadow p-3 d-flex bg-body-tertiary rounded border">
-            <p>Chief Minister's Employment Generation Programme CMEGP
-                <a href="Assets/Chief Minister.docx chart.pdf" class="btn btn-primary" download>
-                    Download PDF</a>
-            </p>
+    <!-- body -->
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="box5">
+            <div class="mt-15 text-center shadow p-3 bg-body-tertiary rounded border">
+                <p>Prime Minister's Employment Generation Programme PMEGP
+                    <a href="Assets/Prime Minister.docx Chart.pdf" class="btn btn-primary" download>
+                        Download PDF</a>
+                </p>
+            </div>
+            <div class="mb-15 text-center shadow p-3 bg-body-tertiary rounded border">
+                <p>Chief Minister's Employment Generation Programme CMEGP
+                    <a href="Assets/Chief Minister.docx chart.pdf" class="btn btn-primary" download>
+                        Download PDF</a>
+                </p>
+            </div>
         </div>
     </div>
 
@@ -87,6 +89,20 @@
 
         .d-flex {
             gap: 50px;
+        }
+
+        .box5 {
+            width: 50%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        footer {
+            margin-top: auto;
         }
     </style>
 
