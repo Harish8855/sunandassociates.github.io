@@ -40,6 +40,23 @@ html{
     font-size: 3rem;
 }
 
+/* news area */
+.latest-news {
+    background-color: #164581;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+}
+.latest-text{
+    list-style: none;
+}
+.latest-news a{
+    margin: 0;
+    font-size: 1.5rem;
+    color: red;
+    text-decoration: none;
+}
+
 /* Nav-Start */
 .web-navbar {
     background-color: var(--bg-white);
@@ -472,6 +489,10 @@ span.required {
 
 .col-8 p {
     font-size: 1.2rem;
+}
+
+.footer-list a {
+    word-break: break-all;
 }
 
 /* footer-end */
