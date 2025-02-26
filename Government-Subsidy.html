@@ -11,16 +11,11 @@
         referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="web-navbar" id="nav-placeholder">
+    <nav class="border web-navbar" id="nav-placeholder">
         <div class="align-middle web-logo">
             <a href="index.html">
                 <img class="web-logo-img" src="Assets/ca-logo.png" alt="CA">SUN & Associates</a>
@@ -38,82 +33,60 @@
         </ul>
     </nav>
 
-    <!-- body -->
     <div class="row">
-        <div class="container-fluid about-bg py-5">
-            <div class="col-12 text-center mb-4">
-                <h1 class="text-uppercase title mine-bc">Government Subsidy</h1>
-            </div>
-            <div class="row fixed-width">
-                <div class="col-12 bg-white mt-5 text-left team-details">
-                    <div class="row">
-                        <div class="col-12 team-details bg-white">
-                            <p>Here will be just simple and sort overview or remark of the services mention below.</p>
-                            <ul class="mb-0 mt-2">
-                                <li>
-                                    Statutory Audit
-                                </li>
-                                <li>
-                                    Internal Audit
-                                </li>
-                                <li>
-                                    Concurrent Audit
-                                </li>
-                                <li>
-                                    Forensic Audit
-                                </li>
-                                <li>
-                                    Risk-Based Audit
-                                </li>
-                                <li>
-                                    Information System Audit (IS Audit)
-                                </li>
-                                <li>
-                                    Revenue Audit
-                                </li>
-                                <li>
-                                    Credit Audit
-                                </li>
-                                <li>
-                                    Asset-Liability Management (ALM) Audit
-                                </li>
-                                <li>
-                                    KYC & AML Audit
-                                </li>
-                                <li>
-                                    Regulatory Compliance Audit
-                                </li>
-                                <li>
-                                    Treasury and Forex Audit
-                                </li>
-                                <li>
-                                    Fraud Risk Assessment
-                                </li>
-                                <li>
-                                    Operational Audit
-                                </li>
-                                <li>
-                                    Due Diligence Audit
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <div class="row mt-15 text-center shadow p-3 d-flex bg-body-tertiary rounded border">
+            <p>Prime Minister's Employment Generation Programme PMEGP
+                <a href="Assets/Prime Minister.docx Chart.pdf" class="btn btn-primary" download>
+                    Download PDF</a>
+            </p>
+        </div>
+
+        <div class="row mb-15 text-center shadow p-3 d-flex bg-body-tertiary rounded border">
+            <p>Chief Minister's Employment Generation Programme CMEGP
+                <a href="Assets/Chief Minister.docx chart.pdf" class="btn btn-primary" download>
+                    Download PDF</a>
+            </p>
         </div>
     </div>
 
     <style>
-        .team-details {
-            padding: 15px 20px;
+        :root {
+            /* background color */
+            --bg-white: #ffff;
+
+            /* other colors */
+            --primary-color: #164581;
+            --secondary-color: #fcba03;
+            --text-white: #fff;
+            --dark-color: #0000;
         }
 
-        .team-details>p {
-            font-size: 1.8rem;
+        .text-center {
+            font-size: 15px;
         }
 
-        .team-details>ul {
-            color: rgb(121, 118, 118);
+        .btn-primary {
+            font-size: 15px;
+            border: none;
+            background-color: var(--secondary-color)
+        }
+
+        .btn-primary :hover {
+            background-color: var(--primary-color);
+            border: none;
+        }
+
+        .mt-15 {
+            margin-top: 10%;
+        }
+
+        .mb-15 {
+            margin-bottom: 10%;
+        }
+
+        .d-flex {
+            gap: 50px;
         }
     </style>
 
@@ -125,7 +98,7 @@
         <div class="container-fluid footer-bg py-5">
             <div class="row fixed-width text-white">
                 <div class="col-12"></div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-12 mb-4">
                     <h4 class="text-uppercase">Services</h4>
                     <ul class="footer-list list-unstyled mb-0 p-0">
                         <li><a href="Bank-Audit.html">Bank Audit</a></li>
@@ -134,7 +107,7 @@
                         <li><a href="Project-Finance.html">Project Finance</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-12 mb-4">
                     <h4 class="text-uppercase">Quick links</h4>
                     <ul class="footer-list list-unstyled mb-0 p-0">
                         <li><a href="index.html#profile">Profile</a></li>
@@ -142,18 +115,18 @@
                         <li><a href="index.html#our-journey">Our Journey</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-12 mb-4">
                     <h4 class="text-uppercase">Contact us</h4>
                     <ul class="footer-list hide-arrow list-unstyled mb-0 p-0">
                         <li>
-                            <a href="https://maps.app.goo.gl/WLtSQqrUFthQwtVt7">
+                            <a href="https://maps.app.goo.gl/Z9LiU2KngH3Nb8uu9">
                                 <span class="yellow-color text-uppercase font-weight-bold">
                                     <span class="iconBox pr-2">
                                         <i class="fa-solid fa-location-dot"></i>
                                     </span>
                                 </span>
                                 1st Floor, 84/24, Bank St, near Punjab National Bank,
-                                Navi Peth, Jaikisan Wadi, Jalgaon,
+                                </br>Navi Peth, Jaikisan Wadi, Jalgaon,
                                 Navi Peth, Jaikisan Wadi, Jalgaon,
                                 Maharashtra 425001
                             </a>
@@ -170,8 +143,7 @@
                         <li>
                             <a href="mailto:casohanunehete@gmail.com">
                                 <span class="yellow-color font-weight-bold">
-                                    <i class="fa-solid fa-envelope">
-                                    </i> casohanunehete@gmail.com
+                                    <i class="fa-solid fa-envelope"></i> casohanunehete@gmail.com
                                 </span>
                             </a>
                         </li>
@@ -181,7 +153,7 @@
         </div>
         <div class="container-fluid bottom-footer py-3">
             <div class="row fixed-width">
-                <div class="col-8">
+                <div class="col-12 text-center">
                     <p class="mb-0 text-white">
                         Copyrights Sun & Associates | All Rights Reserved.
                     </p>
