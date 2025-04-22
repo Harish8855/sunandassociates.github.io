@@ -3,9 +3,13 @@
 
 <head>
     <meta name="google-site-verification" content="w2J6DFIPJyamL2Oi0OLZTyxmmemcc6kW9ylf613pAbQ" />
+    <meta name="google-site-verification" content="w2J6DFIPJyamL2Oi0OLZTyxmmemcc6kW9ylf613pAbQ" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Sun & Associates | Chartered Accountant Firm in India</title
+    <meta name="description" content="Sun & Associates is a trusted Chartered Accountant (CA) firm in India offering expert services in audit, taxation, GST, company registration, and financial advisory. Partner with us for reliable, timely, and professional financial solutions tailored to your business needs.">
+
+    <meta name="keywords" content="CA firm in India,Chartered Accountant services,GST and tax consultants,Company registration,Audit and compliance,Financial advisors in India">
     <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -21,6 +25,11 @@
 
 <body>
 
+    <!-- Loader Start -->
+    <div id="loader">
+        <div class="loader-text">Sun & Associates</div>
+    </div>
+
     <!-- Latest News -->
     <div class="latest-news">
         <a class="latest-text" href="Government-Subsidy.html">Latest: New Government Subsidy Announced!</a>
@@ -29,7 +38,7 @@
     <!-- Navbar -->
     <nav class="web-navbar" id="nav-placeholder">
         <div class="align-middle web-logo">
-            <a href="index.html">
+            <a href="">
                 <img class="web-logo-img" src="Assets/ca-logo.png" alt="CA">SUN & Associates</a>
         </div>
         <button class="web-hamburger" id="web-hamburger">
@@ -172,7 +181,7 @@
                                 </a>
                                 <p>Stay ahead with seamless GST compliance services...
                                 </p>
-                                <a href=""GST-Compliance.html"
+                                <a href="" GST-Compliance.html"
                                     class="text-uppercase transition-all profile-btn mine-bc">learn
                                     more</a>
                             </div>
@@ -199,8 +208,8 @@
                     <div class="col-lg-4 col-md-6 equal-height px-0" data-aos-duration="3000" data-aos="zoom-in">
                         <div class="item">
                             <div class="icon">
-                                <a href="Project-Finance.html"><img src="Assets/project-finance.png" alt="Project Finance"
-                                        class="img-fluid"></a>
+                                <a href="Project-Finance.html"><img src="Assets/project-finance.png"
+                                        alt="Project Finance" class="img-fluid"></a>
                             </div>
                             <div class="info">
                                 <a href="Project-Finance.html">
@@ -244,7 +253,8 @@
                                 </a>
                                 <p>Strategic tax planning to minimize liabilities and maximize savings...
                                 </p>
-                                <a href="Direct-Tax.html" class="text-uppercase transition-all profile-btn mine-bc">learn
+                                <a href="Direct-Tax.html"
+                                    class="text-uppercase transition-all profile-btn mine-bc">learn
                                     more</a>
                             </div>
                         </div>
@@ -372,6 +382,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        $(window).on('load', function () {
+            $(".se-pre-con").fadeOut("slow");
+        });
+    </script>
     <script>
         AOS.init(1500);
     </script>

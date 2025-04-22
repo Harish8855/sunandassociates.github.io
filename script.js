@@ -7,8 +7,6 @@ hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
 });
 
-// $(document).ready(function(){
-// 	$('web-hamburger').click(function(){
-// 		$(this).toggleClass('open');
-// 	});
-// });
+window.addEventListener("load", function() {
+    document.body.classList.add("loaded");
+  });
