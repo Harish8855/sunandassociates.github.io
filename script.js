@@ -10,3 +10,18 @@ hamburger.addEventListener("click", () => {
 window.addEventListener("load", function() {
     document.body.classList.add("loaded");
   });
+
+  window.addEventListener("DOMContentLoaded", function () {
+    const schemaScript = document.createElement("script");
+    schemaScript.type = "application/ld+json";
+    schemaScript.text = JSON.stringify({
+      "@context": "",
+      "@type": "Organization",
+      "name": "Sun & Associates",
+      "url": "",
+      "logo": ""
+    });
+  
+    document.head.appendChild(schemaScript);
+  });
+  
